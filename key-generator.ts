@@ -4,8 +4,8 @@
  * @example deno run key-generator.ts
  */
 
-import cstring from 'https://deno.land/x/cstring/mod.js'
+import cstring from "https://deno.land/x/cstring/mod.js";
 
-console.log('\nLength: 32\nKey: ' + cstring(32));
-console.log('\nLength: 64\nKey: ' + btoa(cstring(64)));
-console.log('\nLength: 128\nKey: ' + btoa(cstring(128)) + '\n');
+console.log("\nLength: 32 - Key: " + btoa(cstring(32)));
+console.log("Length: 64 - Key: " + btoa(cstring(64)));
+console.log("Length: 128 - Key: " + btoa(cstring(128)) + "\n");
